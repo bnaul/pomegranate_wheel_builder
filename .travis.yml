@@ -5,6 +5,7 @@ env:
     - REPO_DIR=pomegranate
     - BUILD_COMMIT=v0.8.1
     - BUILD_DEPENDS="Cython numpy scipy"
+    - NUMPY_VERSION=1.8.0
     - TEST_DEPENDS="nose"
     - PLAT=x86_64
     - UNICODE_WIDTH=32
