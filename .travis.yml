@@ -5,7 +5,7 @@ env:
     - REPO_DIR=pomegranate
     - BUILD_COMMIT=v0.8.1
     - BUILD_DEPENDS="Cython numpy scipy"
-    - TEST_DEPENDS="pytest"
+    - TEST_DEPENDS="nose"
     - PLAT=x86_64
     - UNICODE_WIDTH=32
     - WHEELHOUSE_UPLOADER_USERNAME=travis-worker
