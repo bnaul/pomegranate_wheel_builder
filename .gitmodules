@@ -1,3 +1,6 @@
 [submodule "pomegranate"]
 	path = pomegranate
 	url = https://github.com/jmschrei/pomegranate.git
+[submodule "multibuild"]
+	path = multibuild
+	url = https://github.com/matthew-brett/multibuild.git
