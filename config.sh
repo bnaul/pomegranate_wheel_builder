@@ -11,6 +11,9 @@ function run_tests {
     # Runs tests on installed distribution from an empty directory
     python --version
     echo "Running tests from cloned repository"
+    cd /
+    pwd
+    python -c "import pomegranate; print('pomegranate version:', pomegranate.__version__)"
     nosetests /io/pomegranate/tests
 }
 
