@@ -11,6 +11,8 @@ function run_tests {
     # Runs tests on installed distribution from an empty directory
     python --version
     echo "Running tests from cloned repository"
-    nosetests --no-path-adjustment /io/pomegranate/tests
+    pwd
+    BASE_DIR=$(dirname "${BASH_SOURCE[0]}")
+    nosetests --no-path-adjustment $BASE_DIR/../pomegranate/tests
 }
 
