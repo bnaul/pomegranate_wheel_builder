@@ -4,7 +4,6 @@ env:
   global:
     - REPO_DIR=pomegranate
     - BUILD_COMMIT=v0.8.1
-    - BUILD_DEPENDS="Cython numpy==1.8.0 scipy"
     - TEST_DEPENDS="nose"
     - PLAT=x86_64
     - UNICODE_WIDTH=32
@@ -26,14 +25,17 @@ matrix:
   include:
   - os: linux
     env:
+      - BUILD_DEPENDS="Cython numpy==1.8.0 scipy"
       - MB_PYTHON_VERSION=2.7
 
   - os: linux
     env:
+      - BUILD_DEPENDS="Cython numpy==1.8.0 scipy"
       - MB_PYTHON_VERSION=3.4
 
   - os: linux
     env:
+      - BUILD_DEPENDS="Cython numpy==1.8.0 scipy"
       - MB_PYTHON_VERSION=3.5
       
   - os: linux
@@ -43,16 +45,19 @@ matrix:
   - os: osx
     language: generic
     env:
+      - BUILD_DEPENDS="Cython numpy==1.9.0 scipy"
       - MB_PYTHON_VERSION=2.7
 
   - os: osx
     language: generic
     env:
+      - BUILD_DEPENDS="Cython numpy==1.9.0 scipy"
       - MB_PYTHON_VERSION=3.4
 
   - os: osx
     language: generic
     env:
+      - BUILD_DEPENDS="Cython numpy==1.9.0 scipy"
       - MB_PYTHON_VERSION=3.5
       
   - os: osx

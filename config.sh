@@ -13,6 +13,8 @@ function run_tests {
     echo "Running tests from cloned repository"
     pwd
     BASE_DIR=$(dirname "${BASH_SOURCE[0]}")
-    nosetests --no-path-adjustment $BASE_DIR/../pomegranate/tests
+    # move tests out of base directory to avoid import confusion
+    cp -rf $BASE_DIR/../pomegranate/tests .
+    nosetests
 }
 
