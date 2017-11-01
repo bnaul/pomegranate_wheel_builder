@@ -14,6 +14,7 @@ function run_tests {
     cd /
     pwd
     python -c "import pomegranate; print('pomegranate version:', pomegranate.__version__)"
+    python -c "from pomegranate; print(base)"
     nosetests /io/pomegranate/tests
 }
 
