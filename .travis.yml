@@ -25,46 +25,46 @@ matrix:
   include:
   - os: linux
     env:
-      - BUILD_DEPENDS="Cython numpy==1.8.0 scipy"
+      - BUILD_DEPENDS="Cython numpy==1.8.0 scipy==0.17.0"
       - MB_PYTHON_VERSION=2.7
 
   - os: linux
     env:
-      - BUILD_DEPENDS="Cython numpy==1.8.0 scipy"
+      - BUILD_DEPENDS="Cython numpy==1.8.0 scipy==0.17.0"
       - MB_PYTHON_VERSION=3.4
 
   - os: linux
     env:
-      - BUILD_DEPENDS="Cython numpy==1.8.0 scipy"
+      - BUILD_DEPENDS="Cython numpy==1.8.0 scipy==0.17.0"
       - MB_PYTHON_VERSION=3.5
       
   - os: linux
     env:
-      - BUILD_DEPENDS="Cython numpy==1.8.0 scipy"
+      - BUILD_DEPENDS="Cython numpy==1.10.1 scipy==0.19.0"
       - MB_PYTHON_VERSION=3.6
 
   - os: osx
     language: generic
     env:
-      - BUILD_DEPENDS="Cython numpy==1.9.0 scipy"
+      - BUILD_DEPENDS="Cython numpy==1.9.0 scipy==0.17.0"
       - MB_PYTHON_VERSION=2.7
 
   - os: osx
     language: generic
     env:
-      - BUILD_DEPENDS="Cython numpy==1.9.0 scipy"
+      - BUILD_DEPENDS="Cython numpy==1.9.0 scipy==0.17.0"
       - MB_PYTHON_VERSION=3.4
 
   - os: osx
     language: generic
     env:
-      - BUILD_DEPENDS="Cython numpy==1.9.0 scipy"
+      - BUILD_DEPENDS="Cython numpy==1.9.0 scipy==0.17.0"
       - MB_PYTHON_VERSION=3.5
       
   - os: osx
     language: generic
     env:
-      - BUILD_DEPENDS="Cython numpy==1.10.1 scipy"
+      - BUILD_DEPENDS="Cython numpy==1.10.1 scipy==0.19.0"
       - MB_PYTHON_VERSION=3.6
 
 before_install:
