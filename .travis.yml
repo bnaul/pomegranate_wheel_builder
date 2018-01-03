@@ -3,7 +3,7 @@
 env:
   global:
     - REPO_DIR=pomegranate
-    - BUILD_COMMIT=v0.8.1
+    - BUILD_COMMIT=v0.9.0
     - TEST_DEPENDS="nose"
     - PLAT=x86_64
     - UNICODE_WIDTH=32
