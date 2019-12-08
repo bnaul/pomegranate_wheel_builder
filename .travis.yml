@@ -22,12 +22,6 @@ matrix:
   # Exclude the default Python 3.5 build
   - python: 3.6
 
-  include:
-  - os: linux
-    env:
-      - BUILD_DEPENDS="Cython numpy==1.8.0 scipy==0.17.0"
-      - MB_PYTHON_VERSION=2.7
-
   - os: linux
     env:
       - BUILD_DEPENDS="Cython numpy==1.8.0 scipy==0.17.0"
@@ -47,12 +41,11 @@ matrix:
     env:
       - BUILD_DEPENDS="Cython numpy==1.14.5 scipy==1.1.0"
       - MB_PYTHON_VERSION=3.7
-
-  - os: osx
-    language: generic
+      
+  - os: linux
     env:
-      - BUILD_DEPENDS="Cython numpy==1.9.0 scipy==0.17.0"
-      - MB_PYTHON_VERSION=2.7
+      - BUILD_DEPENDS="Cython numpy==1.14.5 scipy==1.1.0"
+      - MB_PYTHON_VERSION=3.8
 
   - os: osx
     language: generic
@@ -77,6 +70,12 @@ matrix:
     env:
       - BUILD_DEPENDS="Cython numpy==1.14.5 scipy==1.1.0"
       - MB_PYTHON_VERSION=3.7
+    
+  - os: osx
+    language: generic
+    env:
+      - BUILD_DEPENDS="Cython numpy==1.14.5 scipy==1.1.0"
+      - MB_PYTHON_VERSION=3.8
 
 before_install:
     - source multibuild/common_utils.sh
